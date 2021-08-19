@@ -15,7 +15,7 @@ jobs:
         id: myRequest
         uses: fjogeleit/http-request-action@master
         with:
-          url: "http://google.com"
+          url: "https://set-anemone-36.hasura.app/v1/version"
       - name: Show Response
         run: echo ${{ steps.myRequest.outputs.response }}
       - name: List files in the repository
